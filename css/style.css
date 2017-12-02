@@ -1,4 +1,4 @@
-body, div, ul, li, p, h1, h2 {
+body, div, p, h1, h2 {
 	padding: 0;
 	margin: 0;
 	font-family: "Roboto", sans-serif;
@@ -8,7 +8,14 @@ body, div, ul, li, p, h1, h2 {
   overflow: auto;
 }
 
-#summary-entry,
+#main-content {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1024px;
+}
+
+.summary-entry,
+.skills-entry,
 .education-entry,
 .work-entry,
 .project-entry {
@@ -16,6 +23,7 @@ body, div, ul, li, p, h1, h2 {
   margin-bottom: 24px;
 }
 
+.school-entry,
 .employer-entry {
 	font-weight: bold;
 	padding: 0;
@@ -55,6 +63,31 @@ h2 {
 
 }
 
+p {
+  font-size: 14px;
+  color: #333;
+  line-height: 21px;
+}
+
+a {
+  color: #1199c3;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.work-entry ul {
+	list-style-type: circle;
+}
+
+.work-entry li {
+	margin-bottom: 5px;
+}
 
 .date-text {
   font-style: italic;
@@ -71,27 +104,10 @@ h2 {
   line-height: 16px;
 }
 
-p {
-  font-size: 14px;
-  color: #333;
-  line-height: 21px;
-}
-
-a {
-  color: #1199c3;
-  text-decoration: none;
-  margin-top: 10px;
-  display: block;
-  font-weight: bold;
-}
-
-#skills-h3 {
-  color: #00bfff;
-  display: none;
-}
 
 .theme-colour {
   background-color: #00bfff;
+  color: #484848;
 }
 
 .blue-text { 
@@ -135,10 +151,6 @@ a {
 
 .center-content {
   padding: 2.5% 5%;
-}
-
-ul {
-  list-style-type: none;
 }
 
 .biopic {

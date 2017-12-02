@@ -11,17 +11,9 @@ var HTMLgithub = '<li class="flex-item"><span class="blue-text">github</span><sp
 var HTMLblog = '<li class="flex-item"><span class="blue-text">blog</span><span class="white-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="blue-text">location</span><span class="white-text">%data%</span></li>';
 
-var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-column"></ul>';
-var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
+var HTMLsummary = '<p class="summary-entry">%data%</p>';
 
-var HTMLsummary = '<p id="summary-entry">%data%</p>';
-
-var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<div><span class="employer-entry">%data%</span>';
-var HTMLworkTitle = ' - %data%</div>';
-var HTMLworkDates = '<div class="date-text">%data%</div>';
-var HTMLworkLocation = '<div class="location-text">%data%</div>';
-var HTMLworkDescription = '<p><br>%data%</p>';
+var HTMLskills = '<p class="skills-entry">%data%</p>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
@@ -30,16 +22,23 @@ var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%';
-var HTMLschoolDegree = '%data%</a>';
+var HTMLschoolName = '<span class="school-entry">%data%</span></br>';
+var HTMLschoolDegree = '%data%';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
-var HTMLschoolMajor = '<em><br>Major: %data%</em>';
 
 var HTMLonlineClasses = '<h3>Online Education</h3>';
 var HTMLonlineTitle = '<a href="#">%data%';
-var HTMLonlineSchool = ' - %data%</a>';
+var HTMLonlineSchool = '%data%</a>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineURL = '<br><a href="#">%data%</a>';
+
+var HTMLworkStart = '<div class="work-entry"></div>';
+var HTMLworkEmployer = '<span class="employer-entry">%data%</span></br>';
+var HTMLworkTitle = '%data%';
+var HTMLworkDates = '<div class="date-text">%data%</div>';
+var HTMLworkLocation = '<div class="location-text">%data%</div>';
+var HTMLworkDutiesList = '<ul class="duties-list"></ul>'; 
+var HTMLworkDuty = '<li>%data%</li>';
 
 var changeButton = '<button>Change</button>';
