@@ -8,7 +8,7 @@ var bio = {
 	},
 	"bioPic": "images/display-picture.jpg",
 	"skills": ["HTML5", "CSS3", "JavaScript", "jQuery", "Python", "Flask", "Git & Github", "Linux/Unix", "PostgreSQL", "Android Java", "SQLite"],
-	"personalSummary": "A hard-working physiotherapist turned web developer with the goal to become a proficient software engineer. With a passion for technology, I am excited about it’s future impact on society. Much of my spare time has been spent engaging in self-learning to strive towards this career objective. Projects can be seen via the websites provided to the left. As a therapist, many valuable and transferable skills were gained to help provide high quality consultations for clients. Most patients were seen on a word of mouth or referral basis. I believe my ability to excel as a physiotherapist to influence business growth is evidence of my potential to become an excellent software engineer. Furthermore, my unique background helps me understand the importance of a client first approach."
+	"personalSummary": "A hard-working physiotherapist turned web developer with the goal to become a proficient software engineer. With a passion for technology, I am excited about it’s future impact on society. Much of my spare time has been spent engaging in self-learning to strive towards this career objective. As a therapist, many valuable and transferable skills were gained to help provide high quality consultations for clients. Most patients were seen on a word of mouth or referral basis. I believe my ability to excel as a physiotherapist to influence business growth is evidence of my potential to become an excellent software engineer. Furthermore, my unique background helps me understand the importance of a client first approach."
 };
 
 var work = {
@@ -52,61 +52,75 @@ var work = {
 var projects = {
 	"top": [
 		{
-			"title": "Resume",
+			"title": "Physiotherapy",
 			"dates": "2017",
-			"description": "A simplified recreation of my resume",
-			"languages": ["HTML", "CSS", "JavaScript"],
-			"url": "https://github.com/jeffvhuang/frontend-nanodegree-resume"
+			"description": "A web database application to store client information for a physiotherapy business",
+			"skills": ["HTML", "CSS", "Python", "Flask", "PostgreSQL"],
+			"url": "https://github.com/jeffvhuang/physiotherapy"
 		},
 		{
-			"title": "Swiss Tournament",
+			"title": "Cat Clicker",
 			"dates": "2017",
-			"description": "A database for any tournament that uses the Swiss system",
-			"languages": ["Python", "PostgreSQL"],
-			"url": "https://github.com/jeffvhuang/Swiss-Tournament"
+			"description": "A simple app to count the amount of times each cat image is clicked. This app showcases the MVO JavaScript architectural pattern",
+			"skills": ["HTML", "CSS", "JavaScript"],
+			"url": "https://github.com/jeffvhuang/movie-trailers"
+		},
+		{
+			"title": "Restaurant Menus",
+			"dates": "2017",
+			"description": "An application to store data for a variety of restaurants and their menus",
+			"skills": ["HTML", "CSS", "Python", "Flask", "PostgreSQL"],
+			"url": "https://github.com/jeffvhuang/restaurant-menus"
 		},
 		{
 			"title": "Movie Trailers",
 			"dates": "2017",
 			"description": "Small list of some of my favourite movies and their trailers",
-			"languages": ["Python"],
+			"skills": ["Python"],
 			"url": "https://github.com/jeffvhuang/movie-trailers"
 		},
 		{
 			"title": "Inventory",
 			"dates": "2017",
-			"description": "A mobile app for businesses to keep track of their inventory",
-			"languages": ["Java", "SQLite"],
+			"description": "An Android app for businesses to keep track of their inventory",
+			"skills": ["Java", "SQLite"],
 			"url": "https://github.com/jeffvhuang/Inventory"
 		},
 		{
 			"title": "Pagination Content Filter",
 			"dates": "2016",
 			"description": "Content filter for lists of students",
-			"languages": ["HTML", "CSS", "JavaScript"],
+			"skills": ["HTML", "CSS", "JavaScript"],
 			"url": "https://github.com/jeffvhuang/Project---Pagination-Content-Filter"
 		},
 		{
 			"title": "Random Quote Generator",
 			"dates": "2016",
 			"description": "A webpage that generates random quotes",
-			"languages": ["HTML", "CSS", "JavaScript"],
+			"skills": ["HTML", "CSS", "JavaScript"],
 			"url": "https://github.com/jeffvhuang/Random-Quote-Generator"
 		}
 	],
 	"other": [
 		{
+			"title": "Swiss Tournament",
+			"dates": "2017",
+			"description": "A database for any tournament that uses the Swiss system",
+			"skills": ["Python", "PostgreSQL"],
+			"url": "https://github.com/jeffvhuang/Swiss-Tournament"
+		},
+		{
 			"title": "Portfolio",
 			"dates": "2017",
 			"description": "Simple portfolio using CSS Bootstrap",
-			"languages": ["HTML", "CSS"],
+			"skills": ["HTML", "CSS"],
 			"url": "https://github.com/jeffvhuang/portfolio"
 		},
 		{
 			"title": "Pets",
 			"dates": "2017",
 			"description": "An app that can store a list of pets and their details",
-			"languages": ["Java", "SQLite"],
+			"skills": ["Java", "SQLite"],
 			"url": "https://github.com/jeffvhuang/Pets"
 		}
 	]
@@ -243,6 +257,3 @@ $(document).ready(function() {
 	var internationalName = capitalise($name.text());
 	$name.html(internationalName);
 });
-
-// Append a button to main div that will change between physiotherapy and developer resumes
-//$('#main').append(changeButton);
