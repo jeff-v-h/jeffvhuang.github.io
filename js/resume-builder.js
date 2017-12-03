@@ -61,7 +61,7 @@ var projects = {
 		{
 			"title": "Cat Clicker",
 			"dates": "2017",
-			"description": "A simple app to count the amount of times each cat image is clicked. This app showcases the MVO JavaScript architectural pattern",
+			"description": "A simple app to count the amount of times each cat image is clicked. The codebase showcases the use of the MVO JavaScript architectural pattern",
 			"skills": ["HTML", "CSS", "JavaScript"],
 			"url": "https://github.com/jeffvhuang/movie-trailers"
 		},
@@ -163,7 +163,7 @@ var name = HTMLheaderName.replace("%data%", bio.name);
 var role = HTMLheaderRole.replace("%data%", bio.role);
 var mobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 var email = HTMLemail.replace("%data%", bio.contacts.email);
-var github = HTMLgithub.replace("%data%", bio.contacts.github);
+var github = HTMLgithub.replace("%data%", bio.contacts.github).replace("#", "https://www.github.com/" + bio.contacts.github);
 var displayPic = HTMLbioPic.replace("%data%", bio.bioPic);
 
 $('#header').prepend(name).prepend(displayPic);
@@ -226,16 +226,15 @@ education.display = function() {
 	var schoolDates = HTMLschoolDates.replace("%data%", education["schools"][0]["dates"]);
 	var schoolLocation = HTMLschoolLocation.replace("%data%", education.schools[0].city);
 	$("#education").append(HTMLschoolStart);
-	$(".education-entry").append(schoolName).append(schoolDegree)
-	.append(schoolDates).append(schoolLocation);
+	$(".education-entry").append(schoolName).append(schoolDegree).append(schoolDates).append(schoolLocation);
 	
-	$(".education-entry").append(HTMLonlineClasses);
+	$("#education").append(HTMLonlineClasses);
 	for (i=0; i<education.online.length; i++) {
+		$("#education").append(HTMLschoolStart);
 		var school = HTMLonlineSchool.replace("%data%", education.online[i].school);
-		var title = HTMLonlineTitle.replace("%data%", education.online[i].title);
+		var title = HTMLonlineTitle.replace("%data%", education.online[i].title).replace("#", education.online[i].url);
 		var dates = HTMLonlineDates.replace("%data%", education.online[i].dates);
-		// var url = HTMLonlineURL.replace("%data%", education.online[i].url);
-		$(".education-entry").append(title).append(school).append(dates);
+		$(".education-entry:last").append(title).append(school).append(dates);
 	}
 }
 education.display();
