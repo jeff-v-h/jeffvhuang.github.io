@@ -7,7 +7,7 @@ var bio = {
 		"github": "jeffvhuang"
 	},
 	"bioPic": "images/display-picture.jpg",
-	"skills": ["HTML5", "CSS3", "JavaScript", "jQuery", "Python", "Flask", "Git & Github", "Linux/Unix", "PostgreSQL", "Android Java", "SQLite"],
+	"skills": ["HTML5", "CSS3", "JavaScript", "jQuery", "Python", "Flask", "Git & Github", "PostgreSQL", "Android Java", "SQLite"],
 	"personalSummary": "A hard-working physiotherapist turned web developer with the goal to become a proficient software engineer. With a passion for technology, I am excited about it’s future impact on society. Much of my spare time has been spent engaging in self-learning to strive towards this career objective. As a therapist, many valuable and transferable skills were gained to help provide high quality consultations for clients. Most patients were seen on a word of mouth or referral basis. I believe my ability to excel as a physiotherapist to influence business growth is evidence of my potential to become an excellent software engineer. Furthermore, my unique background helps me understand the importance of a client first approach."
 };
 
