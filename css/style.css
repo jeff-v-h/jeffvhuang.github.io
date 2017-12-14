@@ -42,14 +42,14 @@ h1 {
 
 h2 {
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 28px;
 	line-height: 29px;
 	padding: 10px 5%;
 }
 
 h3 {
 	font-style: italic;
-	font-size: 20px;
+	font-size: 26px;
 	line-height: 22px;
 	padding: 10px 5%;
 	margin: 0;
@@ -63,16 +63,17 @@ h4 {
 }
 
 p {
-	font-size: 14px;
 	color: #333;
-	line-height: 21px;
+	line-height: 20px;
 }
 
 a {
 	color: #152CA8;
 	text-decoration: none;
-	display: block;
+	display: inline-block;
 	font-weight: bold;
+	padding-bottom: 3px;
+	padding-top: 5px;
 }
 
 a:hover {
@@ -83,12 +84,17 @@ ul {
 	list-style-type: none;
 }
 
+.project-entry {
+
+}
+
 .work-entry ul {
 	list-style-type: circle;
 }
 
 .work-entry li {
 	margin-bottom: 5px;
+	line-height: 20px;
 }
 
 .date-text {
@@ -155,6 +161,10 @@ img {
 
 span {
   padding: 5px;
+}
+
+.education-entry a {
+	display: block;
 }
 
 #footer {

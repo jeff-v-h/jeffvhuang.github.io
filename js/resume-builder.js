@@ -57,14 +57,21 @@ $(function() {
 				{
 					"title": "Physiotherapy",
 					"dates": "2017",
-					"description": "A web database application to store client information for a physiotherapy business",
+					"description": "A web application to store client information for a physiotherapy business using python and flask on the backend to access the database",
 					"skills": ["HTML", "CSS", "Python", "Flask", "PostgreSQL"],
-					"url": "https://github.com/jeffvhuang/physiotherapy"
+					"url": "http://jeffvh.pythonanywhere.com/"
+				},
+				{
+					"title": "Curriculum Vitae",
+					"dates": "2017",
+					"description": "A recreated web version of this CV being viewed right now. Click the link to see the codebase behind this project",
+					"skills": ["HTML", "CSS", "JavaScript", "MVC"],
+					"url": "https://github.com/jeffvhuang/jeffvhuang.github.io"
 				},
 				{
 					"title": "Cat Clicker",
 					"dates": "2017",
-					"description": "A simple app to count the amount of times each cat image is clicked. The codebase showcases the use of the MVO JavaScript architectural pattern",
+					"description": "A simple app to count the amount of times each cat image is clicked. The codebase showcases the use of a Model-View JavaScript architectural pattern",
 					"skills": ["HTML", "CSS", "JavaScript"],
 					"url": "https://github.com/jeffvhuang/movie-trailers"
 				},
@@ -74,13 +81,6 @@ $(function() {
 					"description": "An application to store data for a variety of restaurants and their menus",
 					"skills": ["HTML", "CSS", "Python", "Flask", "PostgreSQL"],
 					"url": "https://github.com/jeffvhuang/restaurant-menus"
-				},
-				{
-					"title": "Movie Trailers",
-					"dates": "2017",
-					"description": "Small list of some of my favourite movies and their trailers",
-					"skills": ["Python"],
-					"url": "https://github.com/jeffvhuang/movie-trailers"
 				},
 				{
 					"title": "Inventory",
@@ -125,6 +125,13 @@ $(function() {
 					"description": "An app that can store a list of pets and their details",
 					"skills": ["Java", "SQLite"],
 					"url": "https://github.com/jeffvhuang/Pets"
+				},
+				{
+					"title": "Movie Trailers",
+					"dates": "2017",
+					"description": "Small list of some of my favourite movies and their trailers",
+					"skills": ["Python"],
+					"url": "https://github.com/jeffvhuang/movie-trailers"
 				}
 			]
 		},
