@@ -4,9 +4,10 @@ var HTMLheaderRole = '<hr><h3><span class="blue-text">%data%</span></h3>';
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="blue-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="blue-text">mobile</span><span class="white-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><span class="blue-text">email</span><span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><a href="#"><span class="blue-text">github</span><span class="white-text">%data%</span></a></li>';
+var HTMLmobile = '<li class="flex-item"><span class="blue-text">Mobile</span><span class="white-text">%data%</span></li>';
+var HTMLemail = '<li class="flex-item"><span class="blue-text">Email</span><span class="white-text">%data%</span></li>';
+var HTMLgithub = '<li class="flex-item"><a href="#"><span class="blue-text">Github</span><span class="white-text">%data%</span></a></li>';
+var HTMLlinkedin = '<li class="flex-item"><a href="#"><span class="blue-text">LinkedIn</span><span class="white-text">%data%</span></a></li>';
 
 var HTMLsummary = '<p class="summary-entry">%data%</p>';
 

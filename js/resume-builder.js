@@ -3,15 +3,16 @@ $(function() {
 
 		bio: {
 			"name": "Jeffrey Huang",
-			"role": "Web Developer",
+			"role": "Full Stack Web Developer",
 			"contacts": {
 				"mobile": "(+61) 424-374-919",
 				"email": "jeffvh@outlook.com",
-				"github": "jeffvhuang"
+				"github": "jeffvhuang",
+				"linkedin": "jeffvhuang"
 			},
 			"bioPic": "images/display-picture.jpg",
-			"skills": ["HTML5", "CSS3", "JavaScript", "jQuery", "Python", "Flask", "Git & Github", "PostgreSQL", "Android Java", "SQLite"],
-			"personalSummary": "A hard-working physiotherapist turned web developer with the goal to become a proficient software engineer. With a passion for technology, I am excited about it’s future impact on society. Much of my spare time has been spent engaging in self-learning to strive towards this career objective. As a therapist, many valuable and transferable skills were gained to help provide high quality consultations for clients. Most patients were seen on a word of mouth or referral basis. I believe my ability to excel as a physiotherapist to influence business growth is evidence of my potential to become an excellent software engineer. Furthermore, my unique background helps me understand the importance of a client first approach."
+			"skills": ["HTML5", "CSS3", "JavaScript", "jQuery", "Python", "Flask", "Git & Github", "SQLite", "PostgreSQL", "Android Java"],
+			"personalSummary": "An aspiring web developer with the goal to become a proficient software engineer. With a passion for technology, I am excited about it’s future impact on society.  Much of my spare time outside of working hours has been spent engaging in self-learning to strive towards this career objective. My unique background as a physiotherapist has allowed me to develop many valuable and transferable skills in order to provide high quality consultations for clients. I am confident that my ability to excel as a physiotherapist to influence business growth is evidence of my potential to become an excellent software engineer. Furthermore, I have no doubt my numerous years of experience working in an sociable career will allow me to become an exceptionally well rounded software engineer."
 		},
 
 		work: {
@@ -21,8 +22,8 @@ $(function() {
 					"title": "Physiotherapist",
 					"dates": "Feb 2016 - present",
 					"duties": [
-						"Provided high quality physiotherapy to clients from various socio-economic backgrounds to meet their goals, resulting in their return to our clinic for subsequent consultations.",
-						"Had a direct influence on revenue generation, which helped business thrive at Mascot Physiotherapy, resulting in an increase in consultation fees within one year.",
+						"Provided high quality physiotherapy to clients by applying problem solving and logcal thinking skills, resulting in their return to our clinic for subsequent consultations.",
+						"Had a direct influence on revenue generation. Helped business thrive at Mascot Physiotherapy, resulting in an increase in consultation fees within one year.",
 						"Developed and maintained strong working relationships with the business owners, other physiotherapists and staff members. ",
 						"Maintained efficient time management to keep on track with tight booking schedules. ",
 						"Managed insurance caseloads to ensure correct completion of all legal documents.",
@@ -58,29 +59,36 @@ $(function() {
 					"title": "Physiotherapy",
 					"dates": "2017",
 					"description": "A web application to store client information for a physiotherapy business using python and flask on the backend to access the database",
-					"skills": ["HTML", "CSS", "Python", "Flask", "PostgreSQL"],
+					"skills": ["HTML5", "CSS3", "Python", "Flask", "SQLite"],
 					"url": "http://jeffvh.pythonanywhere.com/"
+				},
+				{
+					"title": "Calendates",
+					"dates": "2017",
+					"description": "A common calendar for users to store data about mutual events throughout each year. It allows friends and groups to more easily organise outings or important events by providing a mutual calendar image",
+					"skills": ["HTML5", "CSS3", "JavaScript", "jQuery", "API", "Python", "Flask", "SQLite"],
+					"url": "https://github.com/jeffvhuang/calendates"
 				},
 				{
 					"title": "Curriculum Vitae",
 					"dates": "2017",
 					"description": "A recreated web version of this CV being viewed right now. Click the link to see the codebase behind this project",
-					"skills": ["HTML", "CSS", "JavaScript", "MVC"],
+					"skills": ["HTML5", "CSS3", "JavaScript", "MVC"],
 					"url": "https://github.com/jeffvhuang/jeffvhuang.github.io"
 				},
 				{
 					"title": "Cat Clicker",
 					"dates": "2017",
 					"description": "A simple app to count the amount of times each cat image is clicked. The codebase showcases the use of a Model-View JavaScript architectural pattern",
-					"skills": ["HTML", "CSS", "JavaScript"],
+					"skills": ["HTML5", "CSS3", "JavaScript"],
 					"url": "https://github.com/jeffvhuang/movie-trailers"
 				},
 				{
 					"title": "Restaurant Menus",
 					"dates": "2017",
-					"description": "An application to store data for a variety of restaurants and their menus",
-					"skills": ["HTML", "CSS", "Python", "Flask", "PostgreSQL"],
-					"url": "https://github.com/jeffvhuang/restaurant-menus"
+					"description": "An application to store data for a variety of restaurants and their menus. It requires a login session with either facebook or google+",
+					"skills": ["HTML5", "CSS3", "Python", "Flask", "OAuth 2.0", "SQLite"],
+					"url": "https://github.com/jeffvhuang/OAuth2.0"
 				},
 				{
 					"title": "Inventory",
@@ -93,14 +101,14 @@ $(function() {
 					"title": "Pagination Content Filter",
 					"dates": "2016",
 					"description": "Content filter for lists of students",
-					"skills": ["HTML", "CSS", "JavaScript"],
+					"skills": ["HTML5", "CSS3", "JavaScript"],
 					"url": "https://github.com/jeffvhuang/Project---Pagination-Content-Filter"
 				},
 				{
 					"title": "Random Quote Generator",
 					"dates": "2016",
 					"description": "A webpage that generates random quotes",
-					"skills": ["HTML", "CSS", "JavaScript"],
+					"skills": ["HTML5", "CSS3", "JavaScript"],
 					"url": "https://github.com/jeffvhuang/Random-Quote-Generator"
 				}
 			],
@@ -226,10 +234,11 @@ $(function() {
 			var mobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 			var email = HTMLemail.replace("%data%", bio.contacts.email);
 			var github = HTMLgithub.replace("%data%", bio.contacts.github).replace("#", "https://www.github.com/" + bio.contacts.github);
+			var linkedin = HTMLlinkedin.replace("%data%", bio.contacts.linkedin).replace("#", "https://www.linkedin.com/in/" + bio.contacts.linkedin);
 			var displayPic = HTMLbioPic.replace("%data%", bio.bioPic);
 
 			this.header.prepend(role).prepend(name).prepend(displayPic);
-			this.topContacts.append(mobile).append(email).append(github);
+			this.topContacts.append(mobile).append(email).append(github).append(linkedin);
 			this.footer.append(mobile).append(email).append(github);
 
 			// capitalise last name when document loads
