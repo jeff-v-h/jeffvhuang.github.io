@@ -12,7 +12,7 @@ $(function() {
 			},
 			"bioPic": "images/display-picture.jpg",
 			"skills": ["HTML5", "CSS3", "JavaScript", "jQuery", "Python", "Flask", "Git & Github", "SQLite", "PostgreSQL", "Android Java"],
-			"personalSummary": "An aspiring web developer with the goal to become a proficient software engineer. With a passion for technology, I am excited about it’s future impact on society.  Much of my spare time outside of working hours has been spent engaging in self-learning to strive towards this career objective. My unique background as a physiotherapist has allowed me to develop many valuable and transferable skills in order to provide high quality consultations for clients. I am confident that my ability to excel as a physiotherapist to influence business growth is evidence of my potential to become an excellent software engineer. Furthermore, I have no doubt my numerous years of experience working in an sociable career will allow me to become an exceptionally well rounded software engineer."
+			"personalSummary": "An aspiring web developer with the goal to become a proficient software engineer. With a passion for technology, I am excited about it’s future impact on society.  Much of my spare time outside of working hours has been spent engaging in self-learning to strive towards this career objective. My unique background as a physiotherapist has allowed me to develop many valuable and transferable skills in order to provide high quality consultations for clients. With an inherent value for personal growth, I have no doubt my numerous years of experience working in a sociable career will allow me to become an exceptionally well rounded software engineer."
 		},
 
 		work: {
@@ -251,6 +251,8 @@ $(function() {
 	var viewSummary = {
 		init: function() {
 			this.summary = $('#summary');
+			this.heading = $('#summary h2');
+			this.toggleBtn = $('#summary .toggle');
 			this.render();
 		},
 
@@ -258,12 +260,18 @@ $(function() {
 			var bio = octopus.getBio();
 			var personalSummary = HTMLsummary.replace('%data%', bio.personalSummary);
 			this.summary.append(personalSummary);
+
+			this.toggleBtn.click(function() {
+				$('#summary p').toggle('fast');
+			});
 		}
 	};
 
 	var viewSkills = {
 		init: function() {
 			this.skillsDiv = $('#skills');
+			this.heading = $('#skills h2');
+			this.toggleBtn = $('#skills .toggle');
 			this.render();
 		},
 
@@ -281,12 +289,18 @@ $(function() {
 
 			var skills = HTMLskills.replace("%data%", listOfSkills);
 			this.skillsDiv.append(skills);
+
+			this.toggleBtn.click(function() {
+				$('#skills p').toggle('fast');
+			});
 		}
 	};
 
 	var viewProjects = {
 		init: function() {
 			this.projectsDiv = $("#projects");
+			this.heading = $('#projects h2');
+			this.toggleBtn = $('#projects .toggle');
 			this.render();
 		},
 
@@ -301,12 +315,18 @@ $(function() {
 				this.projectsDiv.append(HTMLprojectStart);
 				$(".project-entry:last").append(title).append(dates).append(description);
 			};
+
+			this.toggleBtn.click(function() {
+				$('.project-entry').toggle('fast');
+			});
 		}
 	};
 
 	var viewEducation = {
 		init: function() {
 			this.educationDiv = $("#education");
+			this.heading = $('#education h2');
+			this.toggleBtn = $('#education .toggle');
 			this.render();
 		},
 
@@ -327,12 +347,18 @@ $(function() {
 				var dates = HTMLonlineDates.replace("%data%", education.online[i].dates);
 				$(".education-entry:last").append(title).append(school).append(dates);
 			};
+
+			this.toggleBtn.click(function() {
+				$('.education-entry').toggle('fast');
+			});
 		}
 	};
 
 	var viewWork = {
 		init: function() {
 			this.workExperience = $("#workExperience");
+			this.heading = $('#workExperience h2');
+			this.toggleBtn = $('#workExperience .toggle');
 			this.render();
 		},
 
@@ -353,6 +379,10 @@ $(function() {
 					$(".duties-list:last").append(workDuty);
 				};
 			};
+
+			this.toggleBtn.click(function() {
+				$('.work-entry').toggle('fast');
+			});
 		}
 	};
 
