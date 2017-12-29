@@ -4,10 +4,6 @@ body, div, p, h1, h2, h3 {
 	font-family: "Roboto", sans-serif;
 }
 
-h2 {
-	display: inline-block;
-}
-
 .clear-fix {
 	overflow: auto;
 }
@@ -21,8 +17,9 @@ h2 {
 .toggle {
 	float: right;
 	margin-right: 20px;
-	margin-top: 20px;
+	margin-top: 10px;
 	cursor: pointer;
+	font-size: 30px;
 }
 
 .summary-entry,
@@ -61,6 +58,7 @@ h2 {
 	font-size: 28px;
 	line-height: 29px;
 	padding: 10px 5%;
+	display: inline-block;
 }
 
 h3 {
@@ -186,6 +184,10 @@ span {
 #footer {
   color: #484848;
   text-align: center;
+}
+
+#footer h2 {
+	display: block;
 }
 
 #lets-connect {
