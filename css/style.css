@@ -98,6 +98,11 @@ ul {
 	list-style-type: none;
 }
 
+#topContacts a,
+#footerContacts a {
+	padding-top: 0;
+}
+
 .project-entry {
 
 }

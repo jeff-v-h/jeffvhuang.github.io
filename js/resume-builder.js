@@ -239,7 +239,7 @@ $(function() {
 
 			this.header.prepend(role).prepend(name).prepend(displayPic);
 			this.topContacts.append(mobile).append(email).append(github).append(linkedin);
-			this.footer.append(mobile).append(email).append(github);
+			this.footer.append(mobile).append(email).append(github).append(linkedin);
 
 			// capitalise last name when document loads
 			var $name = $('#name');
