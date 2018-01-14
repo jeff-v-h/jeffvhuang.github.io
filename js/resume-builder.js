@@ -157,9 +157,17 @@ $(function() {
 			],
 			"online": [
 				{
+					"school": "The University of Minnesota (Coursera)",
+					"title": "Software Development Lifecycle Specialization",
+					"dates": "2017",
+					"courses": ["Software Development Processes and Methodologies", "Agile Software Development", "Lean Software Development", "Engineering Practices for Building Quality Software"],
+					"skills": ["Development Models", "Agile", "Scrum", "Kanban", "Lean Startup"],
+					"url": "https://www.coursera.org/specializations/software-development-lifecycle"
+				},
+				{
 					"school": "Udacity",
 					"title": "Full Stack Web Developer Nanodegree",
-					"dates": "Nov 2017",
+					"dates": "2017",
 					"courses": ["Intro to Computer Science", "How to Use Git and GitHub", "Programming Foundations with Python", "Responsive Web Design Fundamentals", "Intro to HTML and CSS", "Responsive Images", "Intro to Relational Databases", "Authentication & Authorization: OAuth", "Full Stack Foundations", "Intro to AJAX", "Javascript Design Patterns", "Configuring Linux Web Servers"],
 					"skills": ["HTML5", "CSS3", "JavaScript", "JQuery", "Python", "GitHub", "PostgreSQL", "Linux"],
 					"url": "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004"
@@ -167,7 +175,7 @@ $(function() {
 				{
 					"school": "Udacity",
 					"title": "Android Basics Nanodegree",
-					"dates": "May 2017",
+					"dates": "2017",
 					"courses": ["User Interface", "User Input", "Multiscreen Apps", "Networking", "Data Storage"],
 					"skills": ["Android", "Java", "SQLite"],
 					"url": "https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803"
