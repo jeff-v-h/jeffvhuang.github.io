@@ -67,7 +67,7 @@ $(function() {
 					"dates": "2017",
 					"description": "A common calendar for users to store data about mutual events throughout each year. It allows friends and groups to more easily organise outings or important events by providing a mutual calendar image",
 					"skills": ["HTML5", "CSS3", "JavaScript", "jQuery", "API", "Python", "Flask", "SQLite"],
-					"url": "https://github.com/jeffvhuang/calendates"
+					"url": "http://www.calendates.com/"
 				},
 				{
 					"title": "Curriculum Vitae",
@@ -159,7 +159,7 @@ $(function() {
 				{
 					"school": "The University of Minnesota (Coursera)",
 					"title": "Software Development Lifecycle Specialization",
-					"dates": "2017",
+					"dates": "2018",
 					"courses": ["Software Development Processes and Methodologies", "Agile Software Development", "Lean Software Development", "Engineering Practices for Building Quality Software"],
 					"skills": ["Development Models", "Agile", "Scrum", "Kanban", "Lean Startup"],
 					"url": "https://www.coursera.org/specializations/software-development-lifecycle"
