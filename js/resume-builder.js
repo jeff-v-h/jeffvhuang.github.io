@@ -5,22 +5,33 @@ $(function() {
 			"name": "Jeffrey Huang",
 			"role": "Full Stack Web Developer",
 			"contacts": {
-				"mobile": "(+61) 424-374-919",
+				"mobile": "+44 7 983 715 491",
 				"email": "jeffvh@outlook.com",
 				"github": "jeffvhuang",
 				"linkedin": "jeffvhuang"
 			},
 			"bioPic": "images/display-picture.jpg",
-			"skills": ["HTML5", "CSS3", "JavaScript", "jQuery", "Python", "Flask", "Git & Github", "SQLite", "PostgreSQL", "Android Java"],
+			"skills": ["Python", "JavaScript", "CSS3", "HTML5", "jQuery", "PostgreSQL", "SQLite", "Flask", "Git & Github", "Android Java"],
 			"personalSummary": "An aspiring web developer with the goal to become a proficient software engineer. With a passion for technology, I am excited about it’s future impact on society.  Much of my spare time outside of working hours has been spent engaging in self-learning to strive towards this career objective. My unique background as a physiotherapist has allowed me to develop many valuable and transferable skills in order to provide high quality consultations for clients. With an inherent value for personal growth, I have no doubt my numerous years of experience working in a sociable career will allow me to become an exceptionally well rounded software engineer."
 		},
 
 		work: {
 			"jobs": [
 				{
+					"employer": "Connect Health - Hertfordshire Musculoskeletal Service",
+					"title": "Senior Physiotherapist - Locum",
+					"dates": "Feb 2018 - present",
+					"duties": [
+						"Asked to provide physiotherapy expertise at various hospitals and surgeries to help clear the back log of patients on the NHS waiting list",
+						"Managed a caseload often booked with re-reviews of patients who were not able to recover following an initial course of treatment from less experienced therapists.",
+						"Assisted with setting up several locations with appropriate resources during a transitional phase for the NHS musculoskeletal physiotherapy service",
+						"Focused heavily on thorough education and exercise programs to facilitate patient self-management"
+					]
+				},
+				{
 					"employer": "Mascot Physiotherapy & Sports Injury Clinic",
 					"title": "Physiotherapist",
-					"dates": "Feb 2016 - present",
+					"dates": "Feb 2016 - Dec 2017",
 					"duties": [
 						"Provided high quality physiotherapy to clients by applying problem solving and logcal thinking skills, resulting in their return to our clinic for subsequent consultations.",
 						"Had a direct influence on revenue generation. Helped business thrive at Mascot Physiotherapy, resulting in an increase in consultation fees within one year.",
